@@ -8,8 +8,8 @@
 
 :root {
   --fs-primary: clamp(2rem, 4vw + 4px, 2.5rem);
-  --bs-inner: 0 0 4px 0 rgb(255, 255, 255) inset;
-  --color-primary: rgb(240, 248, 255);
+  --bs-inner: 0 0 4px 0 #ffffff inset;
+  --color-primary: #f0f8ff;
   --bgc-primary: #0077b6;
   --bgc-secondary: #023e8a;
   --bgc-ternary: #0c86af;
