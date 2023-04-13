@@ -26,19 +26,17 @@ const SearchLocation = () => {
 
   const getLocationResults = async (searchValue) => {
     try {
-      if (searchValue) {
-        const geolocationUrl = "https://geocoding-api.open-meteo.com/v1/search";
-        const res = await axios.get(geolocationUrl, {
-          params: {
-            name: searchValue,
-            language: "en",
-            count: 10,
-            format: "json",
-          },
-        });
+      const geolocationUrl = "https://geocoding-api.open-meteo.com/v1/search";
+      const res = await axios.get(geolocationUrl, {
+        params: {
+          name: searchValue,
+          language: "en",
+          count: 10,
+          format: "json",
+        },
+      });
 
-        setCityResults(res.data.results);
-      }
+      setCityResults(res.data.results);
     } catch (error) {
       console.log(error);
     }
